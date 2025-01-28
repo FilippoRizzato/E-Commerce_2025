@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make It Fit - Edizione Limitata</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Disclan</h1>
+  <nav class="menu">
+    <a href="#">Artisti</a>
+    <a href="#">Vinili</a>
+    <a href="#">CD</a>
+  </nav>
+</header>
+<div class="container">
+  <div class="sidebar">
+    <ul>
+      <li>Nu Metal</li>
+      <li>Metalcore</li>
+      <li>Heavy Metal</li>
+      <li>Prog Rock</li>
+      <li>Hard Rock</li>
+      <li>Blues Rock</li>
+      <li>Alternative Rock</li>
+      <li>Jazz</li>
+      <li>Indie Rock</li>
+      <li>Folk</li>
+      <li>Soundtrack</li>
+      <!-- Add more categories as needed -->
+    </ul>
+  </div>
+  <div class="content">
+    <div class="carousel">
+      <img src="https://www.disclan.com/164321-large_default/house-of-balloons-10th-anniversary-weeknd-the-lp.jpg" alt="Copertina Album Make It Fit" class="active">
+      <img src="https://www.disclan.com/157466-large_default/igor-tyler-the-creator-lp.jpg" alt="Album 1">
+      <img src="https://www.disclan.com/158975-large_default/dawn-fm-weeknd-the-cd.jpg" alt="Album 2">
+      <img src="https://www.disclan.com/162611-large_default/lamb-as-effigy-.jpg" alt="Album 3">
+    </div>
+    <p class="description">Edizione limitata per il bellissimo ritorno del KABAT.</p>
+
+    <div class="footer">
+      <a href="prodotto.html">
+        <img src="https://www.disclan.com/150738-home_default/damn-lamar-kendrick-lp.jpg" alt="Album 1">
+      </a>
+      <a href="prodotto.html">
+        <img src="https://www.disclan.com/160944-home_default/all-eyez-on-me-2pac-lp.jpg" alt="Album 2">
+      </a>
+      <a href="prodotto.html">
+        <img src="https://www.disclan.com/162611-home_default/lamb-as-effigy-.jpg" alt="Album 3">
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Disclan. Tutti i diritti riservati.</p>
+</footer>
+
+<script>
+  const images = document.querySelectorAll('.carousel img');
+  let currentIndex = 0;
+
+  function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }
+
+  setInterval(showNextImage, 3000);
+</script>
+
+</body>
+</html>
